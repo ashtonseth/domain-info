@@ -145,7 +145,7 @@
     <div class="container">
         <header>
             <h1>ashtonseth</h1>
-            <p class="subtitle">🌐 Domain Contact Information</p>
+            <p class="subtitle">🌐 Domain Information</p>
         </header>
 
         <div class="redirect-notice">
@@ -156,18 +156,19 @@
         </div>
 
         <div class="info-section">
-            <h2>🏢 Organization Information</h2>
+            <h2>🏢 Organization</h2>
             <div class="info-grid">               
-                <div class="info-label">Domains:</div>
+                <div class="info-label">Affiliated Domains:</div>
                 <div class="info-value">ashtonseth.com | ashtonseth.dev | ashton.bz</div>
                 
-                <div class="info-label">Website:</div>
-                <div class="info-value"><a href="https://ashtonseth.dev">https://ashtonseth.dev</a></div>
+                <div class="info-label">Main Website:</div>
+                <div class="info-value"><a href="https://ashtonseth.com">https://ashtonseth.com</a></div>
+            
             </div>
         </div>
 
         <div class="info-section">
-            <h2>📇 Contact Information</h2>
+            <h2>📇 Contact</h2>
             <div class="info-grid">               
                 <div class="info-label">Email:</div>
                 <div class="info-value"><a href="mailto:noc@ashtonseth.com">contact@ashtonseth.com</a></div>
@@ -178,7 +179,7 @@
         </div>
 
         <div class="info-section">
-            <h2>🛜 Network Information</h2>
+            <h2>🛜 Network</h2>
             <div class="info-grid">             
                 <div class="info-label">Services:</div>
                 <div class="info-value">Hosting</div>
@@ -189,15 +190,16 @@
         </div>
 
         <footer>
-            <p>Last Updated: November 2025</p>
+            <p>POB 4123, Santa Clara, CA 95056</p>
             <p>© 2025 ashtonseth. All rights reserved.</p>
+            <p>Last Updated: November 2025</p>
         </footer>
     </div>
     
     <script>
         // Configuration
-        const REDIRECT_URL = 'https://ashtonseth.notion.site/ashtonseth-13a105cd66ed432586b744a3e62f275b'; // Change this to your target URL
-        const COUNTDOWN_SECONDS = 4; // Change this to adjust countdown time
+        const REDIRECT_URL = 'https://ashtonseth.com'; // Change this to your target URL
+        const COUNTDOWN_SECONDS = 5; // Change this to adjust countdown time
         
         let timeLeft = COUNTDOWN_SECONDS;
         let countdownInterval = null;
@@ -227,11 +229,10 @@
             clearInterval(countdownInterval);
             
             const notice = document.querySelector('.redirect-notice');
-            notice.innerHTML = '<h3>Redirect Cancelled</h3><p>You will remain on this page.</p>';
+            notice.innerHTML = '<h3>Redirect Cancelled</h3>';
             notice.style.background = '#d4edda';
             notice.style.borderColor = '#28a745';
             notice.querySelector('h3').style.color = '#155724';
-            notice.querySelector('p').style.color = '#155724';
         });
         
         // Start the countdown when page loads
