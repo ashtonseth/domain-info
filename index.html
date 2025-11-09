@@ -232,6 +232,16 @@
             notice.style.background = '#d4edda';
             notice.style.borderColor = '#28a745';
             notice.querySelector('h3').style.color = '#155724';
+
+            // Fade out and remove after 3 seconds
+            setTimeout(function() {
+                notice.style.transition = 'opacity 0.5s ease';
+                notice.style.opacity = '0';
+                
+                setTimeout(function() {
+                    notice.style.display = 'none';
+                }, 500);
+            }, 3000);
         });
         
         // Start the countdown when page loads
